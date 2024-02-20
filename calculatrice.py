@@ -4,6 +4,9 @@ def addition(x, y):
 def soustraction(x, y):
     return x - y
 
+def multiplication(x, y):
+    return x * y
+
 def division(x, y):
     if y == 0:
         return "Erreur : Division par zéro !"
@@ -26,6 +29,7 @@ def main():
         print("\nChoisissez l'opération à effectuer :")
         print("1. Addition")  
         print("2. Soustraction")
+        print("3. Multiplication")
         print("4. Division")
         print("5. Sortie")
 
@@ -35,6 +39,8 @@ def main():
             print("Résultat : ", addition(num1, num2))
         elif choix == '2':
             print("Résultat : ", soustraction(num1, num2))
+        elif choix == '3':
+            print("Résultat : ", multiplication(num1, num2))    
         elif choix == '4':
             print("Résultat : ", division(num1, num2))
         elif choix == '5':
