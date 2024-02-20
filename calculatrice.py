@@ -1,6 +1,8 @@
 def addition(x, y):
     return x + y
 
+def soustraction(x, y):
+    return x - y
 
 def division(x, y):
     if y == 0:
@@ -22,7 +24,8 @@ def main():
             continue
 
         print("\nChoisissez l'opération à effectuer :")
-        print("1. Addition")
+        print("1. Addition")  
+        print("2. Soustraction")
         print("4. Division")
         print("5. Sortie")
 
@@ -30,7 +33,9 @@ def main():
 
         if choix == '1':
             print("Résultat : ", addition(num1, num2))
-        
+        elif choix == '2':
+            print("Résultat : ", soustraction(num1, num2))
+        elif choix == '4':
             print("Résultat : ", division(num1, num2))
         elif choix == '5':
             quitter()
