@@ -8,4 +8,13 @@ class Calculatrice :
         print(f'{self.nombre1} + {self.nombre2} = {resultat}')
         return resultat
         
+    def multiplication(self):
+        resultat = self.nombre1 * self.nombre2
+        print(f'{self.nombre1} * {self.nombre2} = {resultat}')    
+        return resultat
+    
+    def soustraction(self):
+        resultat = self.nombre1 - self.nombre2
+        print(f'{self.nombre1} - {self.nombre2} = {resultat}')    
+        return resultat
 
